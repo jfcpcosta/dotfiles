@@ -1,0 +1,21 @@
+#======================================================================================================================
+# ALIAS
+#======================================================================================================================
+
+alias ls="ls -G"
+alias dir="ls -G -ls -a"
+
+alias chrome="open /Applications/Google\ Chrome.app"
+
+alias edit-hosts='atom /etc/hosts'
+alias edit-httpd='atom /etc/apache2/httpd.conf'
+alias edit-php='atom /etc/php.ini'
+alias edit-vhosts='atom /etc/apache2/extra/httpd-vhosts.conf'
+
+alias delete-ds='find . -name *.DS_Store -type f -delete'
+alias poweroff='sudo /sbin/shutdown -h now'
+
+alias php5="/usr/bin/php"
+alias php-server="php -S localhost:8080"
+
+alias get-ip="echo 'Internal IP Address:'; ipconfig getifaddr en0; echo '\nExternal IP Address:'; curl ifconfig.me;"
