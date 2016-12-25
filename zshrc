@@ -18,6 +18,21 @@ ZSH_THEME="pure"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
+# VIM MODE (http://dougblack.io/words/zsh-vi-mode.html) -----------------------
+bindkey -v
+
+bindkey '^?' backward-delete-char
+
+function zle-line-init zle-keymap-select {
+    VIM_PROMPT="%{$fg[yellow]%}[% NORMAL]% %{$reset_color%}"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}"
+    zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
+
 plugins=(git symfony2 texmate systemadmin osx adb atom battery bower brew brew-cask colorize composer cp extract httpie sublime vagrant vi-mode xcode)
 
 source $DOTFILES/zsh/path

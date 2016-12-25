@@ -42,9 +42,9 @@ function! LoadVundle()
     Bundle 'SuperTab'
     Bundle 'Tabular'
     Bundle 'jeetsukumaran/vim-buffergator'
-	Bundle 'quickrun'
-	Bundle 'PHPUnit-QF'
-    Bundle 'nerdtree-ack'	
+	  Bundle 'quickrun'
+	  Bundle 'PHPUnit-QF'
+    Bundle 'nerdtree-ack'
 
     if vundle_installed==0
         echo vundle_installed
@@ -116,6 +116,11 @@ set modelines=10
     "colorscheme base16-tomorrow
 	colorscheme Tomorrow-Night-Eighties
 "endif
+
+set t_Co=256
+syntax on
+let base16colorspace=256  " Access colors present in 256 colorspace
+
 " Directories for swp files
 set backupdir=~/.vim/backups
 set directory=~/.vim/backups
