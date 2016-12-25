@@ -5,7 +5,7 @@ export DOTFILES=$HOME/.dotfiles
 # FOR PURE PROMPT (https://github.com/sindresorhus/pure) ----------------------
 fpath=( "$DOTFILES/zsh/zfunctions" $fpath )
 
-autoload -U promptinit && promptinit
+autoload -U promptinit; promptinit
 prompt pure
 
 autoload -U colors && colors
@@ -14,7 +14,7 @@ BASE16_SCRIPT="base16-chalk"
 BASE16_SHELL="$DOTFILES/zsh/base16-shell/scripts/$BASE16_SCRIPT.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="pure"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
