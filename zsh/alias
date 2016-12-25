@@ -4,6 +4,8 @@
 
 alias ls="ls -G"
 alias dir="ls -G -ls -a"
+alias l='ls -la'
+alias sl=ls
 
 alias chrome="open /Applications/Google\ Chrome.app"
 
@@ -19,3 +21,20 @@ alias php5="/usr/bin/php"
 alias php-server="php -S localhost:8080"
 
 alias get-ip="echo 'Internal IP Address:'; ipconfig getifaddr en0; echo '\nExternal IP Address:'; curl ifconfig.me;"
+
+alias hcat='highlight -O ansi'
+
+alias u="npm run-script unit"
+alias i="npm run-script integration"
+
+#alias vim='vim -w ~/.vimlog "$@"'
+#alias mvim='mvim -w ~/.vimlog "$@"'
+
+alias ta='tmux attach -t'
+
+alias gst='git status'
+alias gc='git commit'
+alias gco='git checkout'
+alias ga='git add'
+
+alias gl="git log --all --graph --format=format:'%C(bold blue)%h%C(reset) - %C(black)%s%C(reset) %C(bold magenta)%d%C(reset)'"
