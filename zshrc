@@ -1,5 +1,7 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/fcosta/.oh-my-zsh
+DEFAULT_USER="fcosta"
+
+export ZSH=/Users/$DEFAULT_USER/.oh-my-zsh
+export DOTFILES=$HOME/.dotfiles
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -11,8 +13,6 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="alanpeabody"
 #ZSH_THEME="ys"
 #ZSH_THEME="cloud"
-
-DEFAULT_USER="fcosta"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -91,10 +91,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source .zsh_alias
-source .zsh_colors
-source .zsh_path
-source .zsh_grc
+source $DOTFILES/zsh_alias
+source $DOTFILES/zsh_colors
+source $DOTFILES/zsh_path
+source $DOTFILES/zsh_grc
 
 #source /usr/local/lib/dnx/bin/dnvm.sh
 
