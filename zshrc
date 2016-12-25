@@ -1,5 +1,5 @@
 export DEFAULT_USER="fcosta"
-export ZSH=/Users/$DEFAULT_USER/.oh-my-zsh
+export ZSH=/home/$DEFAULT_USER/.oh-my-zsh
 export DOTFILES=$HOME/.dotfiles
 
 # FOR PURE PROMPT (https://github.com/sindresorhus/pure) ----------------------
