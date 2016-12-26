@@ -43,7 +43,6 @@ function! LoadVundle()
     Bundle 'Tabular'
     Bundle 'jeetsukumaran/vim-buffergator'
 	  Bundle 'quickrun'
-	  Bundle 'PHPUnit-QF'
     Bundle 'nerdtree-ack'
 
     if vundle_installed==0
