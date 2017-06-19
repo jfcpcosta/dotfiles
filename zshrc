@@ -6,7 +6,8 @@ BASE16_SCRIPT="base16-chalk"
 BASE16_SHELL="$DOTFILES/zsh/base16-shell/scripts/$BASE16_SCRIPT.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-ZSH_THEME="pure"
+#ZSH_THEME="pure"
+ZSH_THEME="refined"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
