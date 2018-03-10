@@ -38,3 +38,5 @@ alias gco='git checkout'
 alias ga='git add'
 
 alias gl="git log --all --graph --format=format:'%C(bold blue)%h%C(reset) - %C(black)%s%C(reset) %C(bold magenta)%d%C(reset)'"
+
+alias pbcopy="xclip -sel clip"
