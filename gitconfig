@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /Users/fcosta/.gitignore_global
 	quotepath = false
+	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
