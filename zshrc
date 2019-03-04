@@ -17,6 +17,7 @@ source $DOTFILES/zsh/path
 source $DOTFILES/zsh/alias
 source $DOTFILES/zsh/colors
 source $DOTFILES/zsh/grc
+source $DOTFILES/zsh/functions
 
 source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
