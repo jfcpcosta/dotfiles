@@ -11,7 +11,7 @@ ZSH_THEME="refined"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git symfony2 texmate systemadmin osx adb atom battery bower brew brew-cask colorize composer cp extract httpie sublime vagrant vi-mode xcode)
+plugins=(git symfony2 systemadmin osx adb battery bower brew colorize composer cp extract httpie sublime vagrant vi-mode xcode)
 
 source $DOTFILES/zsh/path
 source $DOTFILES/zsh/alias
