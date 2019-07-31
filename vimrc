@@ -45,7 +45,9 @@ function! LoadVundle()
 	  Bundle 'quickrun'
 	  Bundle 'PHPUnit-QF'
     Bundle 'nerdtree-ack'
+    Plugin 'dracula/vim'
 
+    
     if vundle_installed==0
         echo vundle_installed
         echo "Vundle Installed, now Installing Bundles..."
@@ -111,10 +113,10 @@ set modelines=10
 		"colorscheme Tomorrow-Night-Eighties
     "endif
 "else
-    set t_Co=16
-    set background=dark
+"    set t_Co=16
+"    set background=dark
     "colorscheme base16-tomorrow
-	colorscheme Tomorrow-Night-Eighties
+"	colorscheme Tomorrow-Night-Eighties
 "endif
 
 set t_Co=256
