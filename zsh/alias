@@ -39,6 +39,7 @@ alias ga='git add'
 
 alias gl="git log --all --graph --format=format:'%C(bold blue)%h%C(reset) - %C(black)%s%C(reset) %C(bold magenta)%d%C(reset)'"
 
+alias j13="export JAVA_HOME=`/usr/libexec/java_home -v 13`; java -version"
 #alias j12="export JAVA_HOME=`/usr/libexec/java_home -v 12`; java -version"
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 #alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
