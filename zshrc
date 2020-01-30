@@ -133,6 +133,8 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
+SPACESHIP_DOCKER_CONTEXT_SHOW=false
+
 ### Added by Zplugin's installer
 source '/Users/fcosta/.zplugin/bin/zplugin.zsh'
 autoload -Uz _zplugin

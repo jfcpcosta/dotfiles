@@ -1,289 +1,93 @@
+" Must come first because it changes other options
 set nocompatible
-filetype off
 
-function! LoadVundle()
-    let vundle_installed=filereadable(expand('~/.vim/bundle/vundle/README.md'))
+" [vim-plug] Load plugins
+call plug#begin()
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'junegunn/vim-easy-align'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'janko-m/vim-test'
+Plug 'rking/ag.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'ervandew/supertab'
+Plug 'tomtom/tlib_vim' | Plug 'MarcWeber/vim-addon-mw-utils' | Plug 'garbas/vim-snipmate' | Plug 'honza/vim-snippets'
+Plug 'w0rp/ale'
+Plug 'preservim/nerdtree'
+call plug#end()
 
-    if vundle_installed == 0
-        echo "Creating backups directory..."
-        silent !mkdir -p ~/.vim/backups
-        echo "Installing Vundle.."
-        echo ""
-        silent !mkdir -p ~/.vim/bundle
-        silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    endif
+" [vim-airline] Status bar settings
+let g:airline_theme='dracula'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-
-    " Bundle definitions
-    Bundle 'scrooloose/syntastic'
-    Bundle 'kchmck/vim-coffee-script'
-    Bundle 'slim-template/vim-slim'
-    Bundle 'tpope/vim-fugitive'
-    Bundle 'tpope/vim-haml'
-    Bundle 'tpope/vim-rails'
-    Bundle 'tpope/vim-surround'
-    Bundle 'vim-ruby/vim-ruby'
-    Bundle 'pangloss/vim-javascript'
-    Bundle 'digitaltoad/vim-jade'
-    Bundle 'majutsushi/tagbar'
-    Bundle 'tomtom/tcomment_vim'
-    Bundle 'mileszs/ack.vim'
-    Bundle 'scrooloose/nerdtree'
-    Bundle 'chriskempson/base16-vim'
-    Bundle 'chriskempson/vim-tomorrow-theme'
-    Bundle 'altercation/vim-colors-solarized'
-    Bundle 'guns/vim-clojure-static'
-    Bundle 'elzr/vim-json'
-    Bundle 'nono/vim-handlebars'
-    Bundle 'rking/ag.vim'
-    Bundle 'kien/ctrlp.vim'
-    Bundle 'SuperTab'
-    Bundle 'Tabular'
-    Bundle 'jeetsukumaran/vim-buffergator'
-	  Bundle 'quickrun'
-	  Bundle 'PHPUnit-QF'
-    Bundle 'nerdtree-ack'
-    Plugin 'dracula/vim'
-
-    
-    if vundle_installed==0
-        echo vundle_installed
-        echo "Vundle Installed, now Installing Bundles..."
-        echo ""
-        :BundleInstall
-    endif
-
-    filetype plugin indent on
-endfunction
-
-call LoadVundle()
-
-set number
-set ruler
+let g:dracula_colorterm = 0
+let g:dracula_italic = 0
 syntax on
+colorscheme dracula
+color dracula
 
-" Set encoding
-set encoding=utf-8
+" [vim-test] Test runner settings
+let test#strategy = 'dispatch'
+let test#ruby#minitest#file_pattern = 'test_.*\.rb'
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
-" Whitespace stuff
-set nowrap
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set linespace=2
-set scrolloff=5
-set expandtab
-
-set list listchars=tab:\ \ ,trail:·
-
-set autoindent
-set smartindent
-
-set cpoptions+=$
-set guioptions-=T
-
-set virtualedit=block
-set splitbelow
-
-" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-" Show (partial) command in the status line
-set showcmd
-
-" Use modeline overrides
-set modeline
-set modelines=10
-
-"if &term != "xterm-color"
-    "if has("gui-running")
-        "let g:solarized_termcolors=256
-        "set t_Co=16
-        "set background=light
-        "colorscheme solarized
-		"colorscheme Tomorrow-Night-Eighties
-    "else
-        "let g:solarized_termcolors=256
-        "colorscheme grb256
-		"colorscheme Tomorrow-Night-Eighties
-    "endif
-"else
-"    set t_Co=16
-"    set background=dark
-    "colorscheme base16-tomorrow
-"	colorscheme Tomorrow-Night-Eighties
-"endif
-
-set t_Co=256
-syntax on
-let base16colorspace=256  " Access colors present in 256 colorspace
-
-" Directories for swp files
-set backupdir=~/.vim/backups
-set directory=~/.vim/backups
-
-" Code folding
-set foldenable
-nnoremap <leader>ft Vatzf
-
-"set cursorline
-highlight Search cterm=underline
+" Personal settings
+set cc=80                         " Set rule to 80 columns
+set showmode                      " Display the mode you're in
+set hidden                        " Handle multiple buffers better
+set wildmode=list:longest         " Complete files like a shell
+set ignorecase                    " Case-insensitive searching
+set smartcase                     " But case-sensitive if expression contains a capital letter
+set number                        " Show absolute line numbers (cf. relativenumber)
+set hlsearch                      " Highlight matches
+set list                          " Highlight unwanted spaces
+set wrap                          " Turn on line wrapping
+set shiftwidth=2                  "
+set tabstop=2                     " Tabs and spaces
+set expandtab                     "
+set visualbell                    " No beeping
+set nobackup                      " No backups
+set nowritebackup                 " No backups
+set noswapfile                    " No swap files; more hassle than they're worth
+set undofile                      " Set persistent undo
+set undodir=~/.vim/undo           " Set .un~ files directory
+set tildeop                       " Make tilde command behave like an operator
+set shortmess=atI                 " Avoid unnecessary hit-enter prompts
+set noequalalways                 " Resize windows as little as possible
+set notimeout                     " Don't time out partially entered mapped key sequences
+set ttimeout                      " But do time out key codes
+set tags=.git/tags,tags           " Look for tags in .git/
+set clipboard=unnamed             " Use OS clipboard by default
+set cpo+=J                        " Two spaces delimit my sentences
+set novisualbell
 
 if has('mouse')
     set mouse=a
 endif
 
-" Tab completion
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
+highlight ColorColumn ctermbg=8 guibg=lightgrey
 
-" load the plugin and indent settings for the detected filetype
-filetype plugin indent on
+" Remove trailing white space on write
+autocmd BufWritePre * :%s/\s\+$//e
 
-" Status bar
-set laststatus=2
+" Clear the search buffer when hitting return
+nnoremap <CR> :nohlsearch<CR>
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
-" Without setting this, ZoomWin restores windows in a way that causes
-" equalalways behavior to be triggered the next time CommandT is used.
-" This is likely a bludgeon to solve some other issue, but it works
-set noequalalways
+" Ale
+let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 
 
-" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
-
-" add json syntax highlighting
-au BufNewFile,BufRead *.json set ft=json
-
-" ejs use html
-au BufNewFile,BufRead *.ejs set filetype=html
-
-" make uses real tabs
-au FileType make set noexpandtab
-
-" make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79 expandtab
-
-" make Ruby use 2 spaces
-au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79
-au FileType coffee set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79
-au FileType slim set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79
-au FileType haml set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79
-au FileType erb set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79
-au FileType ujs set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79
-
-" make PHP conform to PSR-1 standards
-au FileType php set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79 expandtab
-au FileType blade set textwidth=0
-
-" Unimpaired configuration
-" Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
-" Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
-
-
-" Key mappings
-nnoremap ,h <C-W>h
-nnoremap ,j <C-W>j
-nnoremap ,k <C-W>k
-nnoremap ,l <C-W>l
-nnoremap ,H <C-W>H
-nnoremap ,J <C-W>J
-nnoremap ,K <C-W>K
-nnoremap ,L <C-W>L
-nnoremap <Leader>] :noh <CR>
-nnoremap <Leader>p :set paste<CR>
-nnoremap <Leader>o :set nopaste<CR>
-vmap <C-x> :!pbcopy<CR>
-vmap <C-c> :w !pbcopy<CR><CR>
-
-set shell=/bin/zsh
-
-" NERD Tree
-if exists(":NERDTree")
-    :NERDTree
-endif
-
-" Package specific bindings
-if exists(":Tabularize")
-    nmap <Leader>a= :Tabularize /=<CR>
-    vmap <Leader>a= :Tabularize /=<CR>
-    nmap <Leader>a: :Tabularize /:\zs<CR>
-    vmap <Leader>a: :Tabularize /:\zs<CR>
-endif
-
-if exists(":Gstatus")
-    nnoremap <leader>gs :Gstatus<CR>
-    nnoremap <leader>gd :Gdiff<CR>
-    nnoremap <leader>gc :Gcommit<CR>
-    nnoremap <leader>gb :Gblame<CR>
-    nnoremap <leader>gl :Glog<CR>
-    nnoremap <leader>gp :Git push<CR>
-endif
-
-" vim-javascript html indentation
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-
-" Ctrlp cleanup
-let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.beam$\|\.dSYM\|\.ipa$\|\.csv\|tags\|public\/images$\|public\/uploads$\|log\|tmp$\|source_maps\|app\/assets\/images\|test\/reports\|node_modules\|bower_components'
-
-" ZoomWin configuration
-" ZoomWin gives me too much shit lately to be useful
-" map <Leader><Leader> :ZoomWin<CR>
-map <Leader>' :TagbarToggle<CR>
-
-map <Leader>n :NERDTreeToggle<CR>
-
-map <Leader>src :source ~/.vimrc<CR>
-
-" Include user's local vim config
-if filereadable(expand("~/.vimrc.local"))
-    source ~/.vimrc.local
-endif
-
-function! ToggleFolding()
-    let curr_fold=&foldmethod
-    let en='off'
-
-    if curr_fold == 'syntax'
-        :setlocal foldmethod=manual
-    else
-        let en='on'
-        :setlocal foldmethod=syntax
-    endif
-
-    echo "Toggled folding ".en
-endfunction
-
-map <Leader>tf :call ToggleFolding()<CR>
-
-" Run PHP script
-function! RunPHPScript()
-  	let filename = expand("%:p")
-	exe '!clear && php %'
-endfunction
-
-function! RunPHPScriptInOtherWindow()
-  	let filename = expand("%:p")
-	sp exe '!php %'
-endfunction
-
-command R :call RunPHPScriptInOtherWindow()
-map <F5> :call RunPHPScript() <CR>
-map <D-r> :call RunPHPScript() <CR>
-
-
-map <F4> exe 'NERDtree' <CR>
+map <F4> :NERDTreeToggle<CR>

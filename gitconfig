@@ -15,3 +15,5 @@
 	ui = true
 [commit]
 	template = /Users/fcosta/.stCommitMsg
+[credential]
+	helper = osxkeychain
