@@ -9,18 +9,16 @@ alias sl=ls
 
 alias chrome="open /Applications/Google\ Chrome.app"
 
-alias edit-hosts='atom /etc/hosts'
-alias edit-httpd='atom /etc/apache2/httpd.conf'
-alias edit-php='atom /etc/php.ini'
-alias edit-vhosts='atom /etc/apache2/extra/httpd-vhosts.conf'
+alias hostsfile='subl /etc/hosts'
+alias phpfile='subl /etc/php.ini'
 
-alias delete-ds='find . -name *.DS_Store -type f -delete'
+alias deleteds='find . -name *.DS_Store -type f -delete'
 alias poweroff='sudo /sbin/shutdown -h now'
 
-alias php5="/usr/bin/php"
-alias php-server="php -S localhost:8080"
+#alias php5="/usr/bin/php"
+alias phpserver="php -S localhost:8080"
 
-alias get-ip="echo 'Internal IP Address:'; ipconfig getifaddr en0; echo '\nExternal IP Address:'; curl ifconfig.me;"
+alias getip="echo 'Internal IP Address:'; ipconfig getifaddr en0; echo '\nExternal IP Address:'; curl ifconfig.me;"
 
 alias hcat='highlight -O ansi'
 
@@ -47,3 +45,6 @@ alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 #alias j9="export JAVA_HOME=`/usr/libexec/java_home -v 9`; java -version"
 alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 #alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
+
+alias cdc="cd /Volumes/Data\ SSD/Code"
+alias cdw="cd ~/Workspaces"
