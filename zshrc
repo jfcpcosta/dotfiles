@@ -145,3 +145,6 @@ zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 
+# Color LS
+source $(dirname $(gem which colorls))/tab_complete.sh
+
