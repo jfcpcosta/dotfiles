@@ -91,3 +91,5 @@ let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 
 
 map <F4> :NERDTreeToggle<CR>
+
+let g:snipMate = { 'snippet_version' : 1 }
