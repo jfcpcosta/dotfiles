@@ -1,0 +1,9 @@
+#====================
+# COLORS
+#====================
+
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+export GREP_OPTIONS='--color=auto'
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8

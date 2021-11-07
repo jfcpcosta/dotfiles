@@ -1,0 +1,54 @@
+#===========================
+# ALIAS
+#===========================
+
+alias ls="ls -G"
+alias dir="ls -G -ls -a"
+alias l='ls -la'
+alias sl=ls
+
+alias chrome="open /Applications/Google\ Chrome.app"
+
+alias hostsfile='subl /etc/hosts'
+alias phpfile='subl /etc/php.ini'
+
+alias deleteds='find . -name *.DS_Store -type f -delete'
+alias poweroff='sudo /sbin/shutdown -h now'
+
+alias phpserver="php -S localhost:8080"
+
+alias getip="echo 'Internal IP Address:'; ipconfig getifaddr en0; echo '\nExternal IP Address:'; curl ifconfig.me;"
+
+alias hcat='highlight -O ansi'
+
+alias u="npm run-script unit"
+alias i="npm run-script integration"
+
+alias ta='tmux attach -t'
+
+alias gst='git status'
+alias gc='git commit'
+alias gco='git checkout'
+alias ga='git add'
+
+alias gl="git log --all --graph --format=format:'%C(bold blue)%h%C(reset) - %C(black)%s%C(reset) %C(bold magenta)%d%C(reset)'"
+
+#alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
+#alias j14="export JAVA_HOME=`/usr/libexec/java_home -v 14`; java -version"
+#alias j13="export JAVA_HOME=`/usr/libexec/java_home -v 13`; java -version"
+#alias j12="export JAVA_HOME=`/usr/libexec/java_home -v 12`; java -version"
+#alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
+#alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
+#alias j9="export JAVA_HOME=`/usr/libexec/java_home -v 9`; java -version"
+#alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+#alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
+
+alias cdw="cd ~/Workspaces"
+alias csc="cd ~/Code"
+
+jhome () {
+  export JAVA_HOME=`/usr/libexec/java_home $@`
+  echo "JAVA_HOME:" $JAVA_HOME
+  echo "java -version:"
+  java -version
+}

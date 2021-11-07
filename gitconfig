@@ -1,0 +1,19 @@
+[user]
+  name = Francisco Costa
+  email = jfcpcosta@gmail.com
+[core]
+  excludesfile = /Users/francisco/.gitignore_global
+  quotepath = false
+  autocrlf = input
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Users/francisco/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[color]
+  ui = true
+[commit]
+  template = /Users/francisco/.stCommitMsg
+[credential]
+  helper = osxkeychain

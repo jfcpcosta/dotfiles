@@ -1,0 +1,17 @@
+function free_port() {
+    if [ -z $1 ]
+    then
+        echo no Port given
+    else
+        PORT=$1;
+        PID=$(sudo lsof -i :$PORT) # store the PID, that is using this port
+
+        if [ -z $PID ]
+        then
+            echo port: $PORT is already free.
+        else
+            sudo kill -9 $PID # kill the process, which frees the port
+            echo port: $PORT is now free.
+        fi
+    fi
+}
