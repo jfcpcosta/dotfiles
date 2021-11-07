@@ -40,6 +40,7 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
 SPACESHIP_DOCKER_CONTEXT_SHOW=false
+SPACESHIP_VI_MODE_SHOW=false
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
