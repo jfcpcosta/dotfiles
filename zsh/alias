@@ -43,8 +43,8 @@ alias gl="git log --all --graph --format=format:'%C(bold blue)%h%C(reset) - %C(b
 #alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 #alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
 
-alias cdw="cd ~/Workspaces"
-alias csc="cd ~/Code"
+alias cdw="cd ~/Workspace"
+alias cdc="cd ~/Code"
 
 jhome () {
   export JAVA_HOME=`/usr/libexec/java_home $@`
