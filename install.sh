@@ -29,3 +29,28 @@ ln -s "$PWD/vimrc" "$HOME/.vimrc"
 ln -s "$PWD/vim" "$HOME/.vim"
 ln -s "$PWD/gitignore_global" "$HOME/.gitignore_global"
 ln -s "$PWD/gitconfig" "$HOME/.gitconfig"
+
+# Install Brew Packages
+brew install ctop
+brew install curl
+brew install deno
+brew install ffmpeg
+brew install fx
+brew install grc
+brew tap heroku/brew && brew install heroku\n
+brew install httpie
+brew install imagemagick
+brew install maven
+brew install neofetch
+brew install netcat
+brew install nmap
+brew install php
+brew install php@7.4
+brew install sass/sass/sass
+brew install vapor
+brew install watchman
+brew install wget
+brew install yarn
+
+# NPM Global Packages
+npm install -g @angular/cli @nestjs/cli @vue/cli commitizen firebase-tools jsonata now
