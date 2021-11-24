@@ -1,19 +1,24 @@
 [user]
-  name = Francisco Costa
-  email = jfcpcosta@gmail.com
+	name = Francisco Costa
+	email = jfcpcosta@gmail.com
 [core]
-  excludesfile = /Users/francisco/.gitignore_global
+	excludesfile = /Users/francisco/.gitignore_global
   quotepath = false
   autocrlf = input
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-  cmd = /Users/francisco/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [color]
   ui = true
 [commit]
-  template = /Users/francisco/.stCommitMsg
+	template = /Users/francisco/.stCommitMsg
 [credential]
   helper = osxkeychain
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
