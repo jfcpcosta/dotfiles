@@ -18,3 +18,5 @@
   template = /Users/francisco/.stCommitMsg
 [credential]
   helper = osxkeychain
+[pull]
+	rebase = false
