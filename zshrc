@@ -83,7 +83,7 @@ zinit light zsh-users/zsh-completions
 ### End of Zinit's installer chunk
 
 # Color LS
-source $(dirname $(gem which colorls))/tab_complete.sh
+#source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
