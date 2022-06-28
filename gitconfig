@@ -15,7 +15,7 @@
 [color]
   	ui = true
 [commit]
-  	template = /Users/francisco/.stCommitMsg
+  	# template = /Users/francisco/.stCommitMsg
 [credential]
   	helper = osxkeychain
 [pull]
