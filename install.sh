@@ -14,7 +14,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Zinit
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/master/doc/install.sh)"
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # Vim Plug
 mkdir vim
@@ -54,6 +54,18 @@ brew install vapor
 brew install watchman
 brew install wget
 brew install yarn
+brew install bat
+brew install btop
+brew install git-flow
+brew install mc
+brew install rmlint
+brew install rsync
+brew install symfony-cli
+brew install exa
+brew install rg
+brew install fzf
+brew install zoxide
+brew install ncdu
 
 # NPM Global Packages
 npm install -g @angular/cli @nestjs/cli @vue/cli commitizen firebase-tools jsonata now
