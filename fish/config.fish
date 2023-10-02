@@ -6,5 +6,8 @@ set SPACEFISH_PROMPT_ADD_NEWLINE false
 
 starship init fish | source
 
+set -x N_PREFIX $HOME/.n
+set -x PATH $N_PREFIX/bin:$PATH
+
 # Aliases
-# alias cat="bat --theme=$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
+alias cat="bat --theme=$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
