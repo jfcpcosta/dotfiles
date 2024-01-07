@@ -21,7 +21,7 @@ editor = code --wait
 ui = true
 
 [commit]
-# template = /Users/francisco/.stCommitMsg
+# template = ~/.stCommitMsg
 
 [credential]
 helper = osxkeychain
