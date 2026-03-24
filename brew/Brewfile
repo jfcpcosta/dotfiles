@@ -1,0 +1,48 @@
+brew "fish"
+brew "starship"
+brew "git"
+brew "tmux"
+brew "eza"                      # (alternative to unmaintened exa) ls modern replacement
+brew "fzf"                      # Fuzzy finder
+brew "fd"                       # Easy to use alternative to find with colors and better defaults
+brew "ripgrep"                  # Extremely fast grep
+brew "bat"                      # Better cat with syntax highlighting
+brew "jq"                       # JSON processor
+brew "yq"                       # YAML processor
+brew "zoxide"                   # Smarter cd command
+brew "delta"                    # Better diff
+brew "wget"                     # Download files from the web
+brew "curl"                     # Command line tool for transferring data with URLs
+brew "tldr"
+brew "tree"
+brew "neovim"
+brew "mas"
+brew "direnv"
+brew "gnu-sed"
+brew "coreutils"
+brew "shellcheck"
+brew "yewtube"                  # YouTube in terminal
+cask "mpv"                      # Media player for youtube in terminal
+brew "ntfy"                     # Send notifications
+brew "mprocs"                   # Process manager
+brew "ctop"                     # Resource monitor
+brew "ffmpeg"                   # Audio and video processing tools
+brew "fx"                       # Command-line JSON processor
+brew "imagemagick"              # Image processing tools
+brew "neofetch"                 # A command-line tool to display system information
+brew "netcat"                   # Networking utility
+brew "nmap"                     # Network exploration tool
+brew "btop"                     # Resource monitor
+brew "git-flow"                 # Git branching model
+brew "mc"                       # Midnight Commander
+brew "rmlint"                   # Remove duplicate files
+brew "rsync"                    # Remote file synchronization
+brew "rg"                       # (ripgrep) better grep
+brew "ncdu"                     # Disk usage analyzer with an ncurses interface
+brew "mcfly"                    # Better history search
+brew "the_silver_searcher"      # A code searching tool similar to ack, with a focus on speed.
+brew "dust"                     # Intuitive du replacement
+brew "procs"                    # List processes
+brew "bottom"                   # htop similar
+brew "bandwhich"                # Network monitor
+brew "gping"                    # Graphical ping

@@ -1,0 +1,6 @@
+brew "kubectl"              # Kubernetes CLI
+brew "helm"                 # The Kubernetes package manager
+brew "k9s"                  # Kubernetes CLI To Manage Your Clusters In Style!
+brew "kubectx"              # Change context and namespace to k8s cluster
+brew "kind"                 # Run local Kubernetes clusters using Docker container "nodes"
+brew "minikube"             # Run Kubernetes locally

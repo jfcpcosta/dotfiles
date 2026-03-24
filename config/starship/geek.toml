@@ -1,0 +1,53 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = true
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$golang\
+$rust\
+$docker_context\
+$kubernetes\
+$cmd_duration\
+$line_break\
+$character
+"""
+
+[username]
+show_always = true
+style_user = "bold cyan"
+format = "[$user]($style)@"
+
+[hostname]
+ssh_only = false
+style = "bold yellow"
+format = "[$hostname]($style) "
+
+[directory]
+style = "bold blue"
+truncation_length = 4
+
+[git_branch]
+style = "bold purple"
+
+[git_status]
+style = "yellow"
+
+[kubernetes]
+disabled = false
+format = "[k8s:$context( \\($namespace\\))]($style) "
+style = "cyan"
+
+[cmd_duration]
+min_time = 300
+style = "dimmed yellow"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"

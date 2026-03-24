@@ -1,0 +1,7 @@
+@angular/cli
+@nestjs/cli
+firebase-tools
+@google/gemini-cli
+commitizen
+@github/copilot
+@qodo/gen

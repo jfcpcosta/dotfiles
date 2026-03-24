@@ -1,0 +1,61 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = false
+
+format = """
+[](#DA627D)\
+$directory\
+[](fg:#DA627D bg:#FCA17D)\
+$git_branch\
+$git_status\
+[](fg:#FCA17D bg:#86BBD8)\
+$nodejs\
+$kubernetes\
+[](fg:#86BBD8 bg:#06969A)\
+$time\
+[ ](fg:#06969A)\
+$character
+"""
+
+[directory]
+style = "bg:#DA627D fg:#ffffff bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncate_to_repo = true
+home_symbol = "~"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Developer" = "󰲋 "
+"Code" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:#FCA17D fg:#1C1C1C bold"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#FCA17D fg:#1C1C1C bold"
+format = "[$all_status$ahead_behind ]($style)"
+
+[nodejs]
+symbol = ""
+style = "bg:#86BBD8 fg:#1C1C1C bold"
+format = "[ $symbol $version ]($style)"
+
+[kubernetes]
+symbol = "☸"
+style = "bg:#86BBD8 fg:#1C1C1C bold"
+format = "[ $symbol $context ]($style)"
+disabled = false
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "bg:#06969A fg:#ffffff bold"
+format = "[ ♥ $time ]($style)"
+
+[character]
+success_symbol = "[❯](bold #86BBD8)"
+error_symbol = "[❯](bold red)"
