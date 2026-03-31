@@ -17,3 +17,4 @@ brew "composer"                 #
 brew "wp-cli"                   # Wordpress CLI
 brew "tokei"                    # Stats for programming project (files, lines, etc.)
 brew "hyperfine"                # Benchmark script execution
+brew "excalidraw-converter"     # Converstion tool from excalidraw to gliffy or mermaid
