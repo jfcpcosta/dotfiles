@@ -50,8 +50,8 @@
     amend = !git add --all && git commit --amend --no-edit
     count = !git shortlog -s --grep
 
-[includeIf "gitdir:~/work/"]
+[includeIf "gitdir:~/Developer/workspace"]
     path = ~/.config/git/includes/work.gitconfig
 
-[includeIf "gitdir:~/code/personal/"]
+[includeIf "gitdir:~/"]
     path = ~/.config/git/includes/personal.gitconfig

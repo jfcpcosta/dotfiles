@@ -20,6 +20,7 @@ for profile in "$@"; do
     dev) install_bundle "$BREW_DIR/Brewfile.dev" ;;
     k8s) install_bundle "$BREW_DIR/Brewfile.k8s" ;;
     fun) install_bundle "$BREW_DIR/Brewfile.fun" ;;
+    apps) install_bundle "$BREW_DIR/Brewfile.apps" ;;
     *)
       echo "Perfil desconhecido: $profile"
       exit 1

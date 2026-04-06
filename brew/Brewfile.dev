@@ -2,6 +2,7 @@ tap "oven-sh/bun"               #
 
 brew "fnm"                      # Fast Node Manager
 brew "pnpm"                     # Fast, disk space efficient package manager
+brew "yarn"                     #
 brew "bun"                      #
 brew "deno"                     # Secure runtime for JavaScript and TypeScript
 brew "watchman"                 # File watching service
