@@ -5,3 +5,4 @@ firebase-tools
 commitizen
 @github/copilot
 @qodo/gen
+eas-cli

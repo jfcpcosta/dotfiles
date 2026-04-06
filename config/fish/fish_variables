@@ -1,4 +1,4 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/opt/homebrew/bin\x1e/Users/francisco/Library/pnpm
+SETUVAR fish_user_paths:/Users/francisco/Library/Android/sdk/emulator\x1e/Users/francisco/Library/Android/sdk/platform\x2dtools\x1e/opt/homebrew/bin\x1e/Users/francisco/Library/pnpm
