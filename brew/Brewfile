@@ -46,3 +46,5 @@ brew "procs"                    # List processes
 brew "bottom"                   # htop similar
 brew "bandwhich"                # Network monitor
 brew "gping"                    # Graphical ping
+brew "mole"                     # A terminal tool to clean my mac
+brew "grc"                      # Colorize log files and command output

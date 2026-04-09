@@ -55,3 +55,6 @@
 
 [includeIf "gitdir:~/code/personal/"]
     path = ~/.config/git/includes/personal.gitconfig
+[user]
+	email = jfcpcosta@gmail.com
+	name = Francisco Costa
