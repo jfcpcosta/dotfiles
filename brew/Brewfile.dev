@@ -2,6 +2,7 @@ tap "oven-sh/bun"               #
 
 brew "fnm"                      # Fast Node Manager
 brew "pnpm"                     # Fast, disk space efficient package manager
+brew "yarn"                     #
 brew "bun"                      #
 brew "deno"                     # Secure runtime for JavaScript and TypeScript
 brew "watchman"                 # File watching service
@@ -17,3 +18,4 @@ brew "composer"                 #
 brew "wp-cli"                   # Wordpress CLI
 brew "tokei"                    # Stats for programming project (files, lines, etc.)
 brew "hyperfine"                # Benchmark script execution
+brew "excalidraw-converter"     # Converstion tool from excalidraw to gliffy or mermaid
