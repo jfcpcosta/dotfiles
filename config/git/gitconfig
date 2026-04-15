@@ -51,6 +51,6 @@
     count = !git shortlog -s --grep
 
 [includeIf "gitdir:~/Developer/workspace"]
-    path = ~/.config/git/includes/work.gitconfig
+    path = ~/.dotfiles/config/git/includes/work.gitconfig
 [includeIf "gitdir:~/"]
-    path = ~/.config/git/includes/personal.gitconfig
+    path = ~/.dotfiles/config/git/includes/personal.gitconfig
