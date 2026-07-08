@@ -6,15 +6,15 @@ function getip
         set internal_ip (ipconfig getifaddr $interface 2>/dev/null)
     end
 
-    echo "Internal IP Address:"
+    echo "🛜 Internal IP Address:"
     if test -n "$internal_ip"
         echo $internal_ip
     else
-        echo "Não foi possível determinar"
+        echo "❌ Unable to determine internal IP address."
     end
 
     echo ""
-    echo "External IP Address:"
+    echo "🌐 External IP Address:"
     curl -fsSL ifconfig.me
     echo ""
 end

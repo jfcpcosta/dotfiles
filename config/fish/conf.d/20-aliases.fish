@@ -1,5 +1,6 @@
 alias rawcat="command cat"
 alias rawls="command ls"
+alias rawcd="command cd"
 
 alias vim="nvim"
 alias v="nvim"
@@ -11,6 +12,12 @@ alias l="eza --color=always --long --git --icons=always --no-filesize --no-time 
 alias ll="eza -lah --git --icons"
 alias lt="eza --tree --level=2 --icons"
 alias la="eza -la --icons"
+
+alias diff="batdiff"
+alias grep="batgrep"
+alias man="batman"
+alias less="bat"
+alias view="bat"
 
 alias g="git"
 alias gs="git status --short --branch"
