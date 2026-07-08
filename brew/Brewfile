@@ -1,7 +1,9 @@
-brew "fish"
-brew "starship"
-brew "git"
-brew "tmux"
+# Brewfile for command line tools
+
+brew "fish"                     # Friendly interactive shell 
+brew "starship"                 # Cross-shell prompt
+brew "git"                      # Distributed version control system
+brew "tmux"                     # Terminal multiplexer
 brew "eza"                      # (alternative to unmaintened exa) ls modern replacement
 brew "fzf"                      # Fuzzy finder
 brew "fd"                       # Easy to use alternative to find with colors and better defaults
@@ -13,14 +15,15 @@ brew "zoxide"                   # Smarter cd command
 brew "delta"                    # Better diff
 brew "wget"                     # Download files from the web
 brew "curl"                     # Command line tool for transferring data with URLs
-brew "tldr"
-brew "tree"
-brew "neovim"
-brew "mas"
-brew "direnv"
-brew "gnu-sed"
-brew "coreutils"
-brew "shellcheck"
+brew "tldr"                     # Simplified and community-driven man pages
+brew "tree"                     # Display directory tree
+brew "neovim"                   # Modern Vim-based text editor
+brew "mas"                      # Mac App Store command line interface
+brew "direnv"                   # Environment variable manager
+brew "gnu-sed"                  # GNU sed
+brew "coreutils"                # GNU core utilities
+brew "shellcheck"               # Shell script analysis tool
+brew "bat-extras"               # Extra tools for bat
 brew "yewtube"                  # YouTube in terminal
 cask "mpv"                      # Media player for youtube in terminal
 brew "ntfy"                     # Send notifications

@@ -1,3 +1,5 @@
+# Brewfile for Kubernetes tools
+
 brew "kubectl"              # Kubernetes CLI
 brew "helm"                 # The Kubernetes package manager
 brew "k9s"                  # Kubernetes CLI To Manage Your Clusters In Style!

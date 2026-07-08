@@ -1,4 +1,5 @@
-# ASCII Funny Tools
+# Brewfile for ASCII Funny Tools
+
 brew "cowsay"                   # Cow with text ballon
 brew "sl"                       # Train
 brew "asciiquarium"             # Aquarim screensaver

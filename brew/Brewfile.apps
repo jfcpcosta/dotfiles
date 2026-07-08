@@ -1,61 +1,63 @@
-cask "google-chrome"
-cask "orion"
-cask "microsoft-teams"
-cask "intellij-idea"
-cask "arc"
-cask "thebrowsercompany-dia"
-cask "balenaetcher"
-cask "beekeeper-studio"
-cask "chatgpt"
-cask "claude"
-cask "codex"
-cask "discord"
-cask "docker-desktop"
-cask "drawio"
-cask "dropbox"
-cask "expo-orbit"
-cask "figma"
-cask "firefox@developer-edition"
-cask "focusrite-control-2"
-cask "hoppscotch"
-cask "httpie-desktop"
-cask "insomnia"
-cask "iterm2"
-cask "itermai"
-cask "keka"
-cask "lens"
-cask "lm-studio"
-cask "logi-options+"
-cask "mediainfoex"
-cask "notion"
-cask "obs"
-cask "openvpn-connect"
-brew "orbstack"
-cask "postman"
-cask "sony-ps-remote-play"
-cask "qlmarkdown"
-cask "raspberry-pi-imager"
-cask "raycast"
-cask "requestly"
-brew "sequel-ace"
-cask "spotify"
-cask "stats"
-cask "steam"
-cask "stremio"
-cask "sublime-text"
-cask "surfshark"
-brew no-quarantine "syntax-highlight"
-cask "tableplus"
-cask "textmate"
-cask "thunderbird"
-cask "tower"
-cask "transmission"
-cask "transmit"
-cask "utm"
-cask "visual-studio-code"
-cask "visual-studio-code@insiders"
-cask "vlc"
-cask "wireshark-app"
-cask "zed"
-cask "charles"
-cask "android-studio"
+# Brewfile for applications
+
+cask "google-chrome"                    # Google Chrome web browser
+cask "orion"                            # Private and secure web browser
+cask "microsoft-teams"                  # Microsoft Teams communication tool
+cask "intellij-idea"                    # IntelliJ IDEA IDE
+cask "arc"                              # Arc web browser
+cask "thebrowsercompany-dia"            # Dia web browser
+cask "balenaetcher"                     # Balena Etcher image writer
+cask "beekeeper-studio"                 # Database client
+cask "chatgpt"                          # ChatGPT web application
+cask "claude"                           # Claude web application
+cask "codex"                            # Codex web application
+cask "discord"                          # Discord communication tool
+cask "docker-desktop"                   # Docker Desktop
+cask "drawio"                           # Diagramming tool
+cask "dropbox"                          # Dropbox file synchronization
+cask "expo-orbit"                       # Expo Orbit
+cask "figma"                            # Figma design tool
+cask "firefox@developer-edition"        # Firefox Developer Edition
+cask "focusrite-control-2"              # Focusrite Control 2
+cask "hoppscotch"                       # Hoppscotch API testing tool
+cask "httpie-desktop"                   # HTTP client
+cask "insomnia"                         # API testing tool
+cask "iterm2"                           # Terminal emulator
+cask "itermai"                          # Terminal emulator
+cask "keka"                             # Archive manager
+cask "lens"                             # Kubernetes IDE
+cask "lm-studio"                        # Language model studio
+cask "logi-options+"                    # Logitech Options+
+cask "mediainfoex"                      # MediaInfoEx
+cask "notion"                           # Notion productivity tool
+cask "obs"                              # Open Broadcaster Software
+cask "openvpn-connect"                  # OpenVPN Connect
+brew "orbstack"                         # OrbStack virtualization
+cask "postman"                          # API development environment
+cask "sony-ps-remote-play"              # Sony PlayStation Remote Play
+# cask "qlmarkdown"                     # Quick Look for Markdown files
+cask "raspberry-pi-imager"              # Raspberry Pi Imager
+cask "raycast"                          # Raycast productivity tool
+cask "requestly"                        # Requestly API testing tool
+brew "sequel-ace"                       # Database management tool
+cask "spotify"                          # Spotify music streaming service
+cask "stats"                            # System statistics tool
+cask "steam"                            # Steam gaming platform
+cask "stremio"                          # Stremio video streaming service
+cask "sublime-text"                     # Sublime Text code editor
+cask "surfshark"                        # Surfshark VPN
+brew no-quarantine "syntax-highlight"   # Syntax highlighting for code
+cask "tableplus"                        # TablePlus database management tool
+cask "textmate"                         # TextMate text editor
+cask "thunderbird"                      # Thunderbird email client
+cask "tower"                            # Tower Git client
+cask "transmission"                     # Transmission BitTorrent client
+cask "transmit"                         # Transmit FTP client
+cask "utm"                              # UTM virtualization
+cask "visual-studio-code"               # Visual Studio Code editor
+cask "visual-studio-code@insiders"      # Visual Studio Code Insiders editor
+cask "vlc"                              # VLC media player
+cask "wireshark-app"                    # Wireshark network protocol analyzer
+cask "zed"                              # Zed code editor
+cask "charles"                          # Charles proxy
+cask "android-studio"                   # Android Studio IDE

@@ -1,22 +1,24 @@
-tap "oven-sh/bun"               #
+# Brewfile for development tools
+
+tap "oven-sh/bun"               # 
 
 brew "fnm"                      # Fast Node Manager
 brew "pnpm"                     # Fast, disk space efficient package manager
-brew "yarn"                     #
-brew "bun"                      #
+brew "yarn"                     # 
+brew "bun"                      # 
 brew "deno"                     # Secure runtime for JavaScript and TypeScript
 brew "watchman"                 # File watching service
 cask "ngrok"                    # Secure introspectable tunnels to localhost
-brew "openssl"                  #
-brew "sqlite"                   #
+brew "openssl"                  # 
+brew "sqlite"                   # 
 brew "lazygit"                  # Git UI
 brew "gh"                       # GitHub CLI
 brew "httpie"                   # Command line HTTP client, a user-friendly cURL replacement
 brew "maven"                    # Build automation tool
 brew "php"                      # PHP programming language
-brew "composer"                 #
+brew "composer"                 # Dependency manager for PHP
 brew "wp-cli"                   # Wordpress CLI
 brew "tokei"                    # Stats for programming project (files, lines, etc.)
 brew "hyperfine"                # Benchmark script execution
 brew "biome"                    # 
-brew "excalidraw-converter"     # Converstion tool from excalidraw to gliffy or mermaid
+brew "excalidraw-converter"     # Conversion tool from excalidraw to gliffy or mermaid
