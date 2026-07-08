@@ -6,3 +6,4 @@ commitizen
 @github/copilot
 @qodo/gen
 eas-cli
+@ghgrab/ghgrab
