@@ -48,3 +48,7 @@ brew "bandwhich"                # Network monitor
 brew "gping"                    # Graphical ping
 brew "mole"                     # A terminal tool to clean my mac
 brew "grc"                      # Colorize log files and command output
+brew "prettyping"               # Pretty ping
+brew "duf"                      # Disk usage/free utility
+brew "broot"                    # A new way to see and navigate directory trees
+brew "hub"                      # GitHub command line tool
