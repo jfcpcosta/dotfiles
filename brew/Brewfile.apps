@@ -10,7 +10,7 @@ cask "balenaetcher"                     # Balena Etcher image writer
 cask "beekeeper-studio"                 # Database client
 cask "chatgpt"                          # ChatGPT web application
 cask "claude"                           # Claude web application
-cask "codex"                            # Codex web application
+cask "codex-app"                        # Codex web application
 cask "discord"                          # Discord communication tool
 cask "docker-desktop"                   # Docker Desktop
 cask "drawio"                           # Diagramming tool
@@ -32,21 +32,21 @@ cask "mediainfoex"                      # MediaInfoEx
 cask "notion"                           # Notion productivity tool
 cask "obs"                              # Open Broadcaster Software
 cask "openvpn-connect"                  # OpenVPN Connect
-brew "orbstack"                         # OrbStack virtualization
+cask "orbstack"                         # OrbStack virtualization
 cask "postman"                          # API development environment
 cask "sony-ps-remote-play"              # Sony PlayStation Remote Play
 # cask "qlmarkdown"                     # Quick Look for Markdown files
 cask "raspberry-pi-imager"              # Raspberry Pi Imager
 cask "raycast"                          # Raycast productivity tool
 cask "requestly"                        # Requestly API testing tool
-brew "sequel-ace"                       # Database management tool
+cask "sequel-ace"                       # Database management tool
 cask "spotify"                          # Spotify music streaming service
 cask "stats"                            # System statistics tool
 cask "steam"                            # Steam gaming platform
 cask "stremio"                          # Stremio video streaming service
 cask "sublime-text"                     # Sublime Text code editor
 cask "surfshark"                        # Surfshark VPN
-brew no-quarantine "syntax-highlight"   # Syntax highlighting for code
+cask "syntax-highlight"                 # Syntax highlighting for code
 cask "tableplus"                        # TablePlus database management tool
 cask "textmate"                         # TextMate text editor
 cask "thunderbird"                      # Thunderbird email client
