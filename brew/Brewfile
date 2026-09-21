@@ -25,14 +25,14 @@ brew "coreutils"                # GNU core utilities
 brew "shellcheck"               # Shell script analysis tool
 brew "bat-extras"               # Extra tools for bat
 brew "yewtube"                  # YouTube in terminal
-cask "mpv"                      # Media player for youtube in terminal
+cask "stolendata-mpv"           # Media player for youtube in terminal
 brew "ntfy"                     # Send notifications
 brew "mprocs"                   # Process manager
 brew "ctop"                     # Resource monitor
 brew "ffmpeg"                   # Audio and video processing tools
 brew "fx"                       # Command-line JSON processor
 brew "imagemagick"              # Image processing tools
-brew "neofetch"                 # A command-line tool to display system information
+brew "fastfetch"                # A command-line tool to display system information
 brew "netcat"                   # Networking utility
 brew "nmap"                     # Network exploration tool
 brew "btop"                     # Resource monitor
