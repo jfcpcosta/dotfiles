@@ -2,6 +2,8 @@ fish_add_path ~/.local/bin
 fish_add_path ~/bin
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.cargo/bin
+fish_add_path $HOME/.composer/vendor/bin
+
 
 # Android SDK
 set -gx ANDROID_HOME $HOME/Library/Android/sdk
