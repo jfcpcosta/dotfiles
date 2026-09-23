@@ -39,3 +39,5 @@ set -gx FZF_CTRL_R_OPTS "\
 set -gx FZF_ALT_C_OPTS "\
     --walker-skip=.git,node_modules,target,vendor,dist,build,.next,.nuxt,.turbo,.cache \
     --preview='eza --tree --level=2 --icons --color=always {}'"
+
+source "$HOME/.cargo/env.fish"
